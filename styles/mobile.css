@@ -1,22 +1,57 @@
 /*color palette: https://coolors.co/palette/5f0f40-9a031e-fb8b24-e36414-0f4c5c*/
 
 :root {
-    --primary-color: #9a031e;
-    --secundary-color: #e36414;
+    --primary-color: #5f0f40;
+    --lighter-primary-color: #be2f49;
+    --secundary-color: #9a031e;
+    --tertiary-color: #fb8b24;
+    --button-color: #0f4c5c;
+    --highlight: rgba(255, 255, 255, 0.3);
+    --light-shadow: 0 0 1rem rgba(0,0,0,0.5);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     font-size: 62.5%;
 }
 
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none;
+}
+
+figure img {
+    width: 100%;
 }
 
 .container {
@@ -25,12 +60,27 @@ li {
     flex-wrap: wrap;
 }
 
+/*--------------------------------------------------------*/
+
+
+
+/*               HEADER               */
+
 header {
     width: 100vw;
+    min-width: 32rem;
     height: 5rem;
 
     background-color: var(--primary-color);
     color: white;
+
+    position: sticky;
+    top: 0;
+}
+
+header figure {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 nav {
@@ -38,18 +88,141 @@ nav {
 
     height: 100%;
     width: 100%;
+    padding: 0 .5rem;
 }
 
-nav:first-child {
-    width: 4rem;
-    height: 4rem;
-    background-color: var(--secundary-color);
+nav figure:first-child {
+    background-color: white;
+
+    border-radius: 1rem;
 }
 
 .nav-list {
     display: none;
 }
 
-nav:last-child {
+nav figure:last-child {
+    background-color: var(--lighter-primary-color);
+
+    border-radius: 1.75rem;
+    overflow: hidden;
+}
+
+nav figure:last-child:hover {
+    background: var(--highlight);
+}
+
+nav figure:last-child img {
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------------------------------------------*/
+
+
+
+
+/*              MAIN                */
+
+main {
+    width: 100vw;
+    min-width: 32rem;
+    margin-top: 1rem;
+}
+
+/*    ARTICLE     */
+
+
+.about-us {
+    justify-content: center;
+    margin: 0 .2rem;
+}
+
+.about-us h2 {
+    margin-bottom: 1rem;
+}
+
+.about-us section {
+    justify-content: center;
+
+    margin: 1.7rem 0 4rem 0;
+}
+
+.about-us figure {
+    width: 70vw;
+    min-width: 22rem;
+    height: 60vw;
+    min-height: 19rem;
+
+    border: solid;
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+.about-us span {
+    font-size: 1rem;
+}
+
+/* ******************************** */
+
+
+/*      PRODUCTS       */
+
+.products {
+    justify-content: center;
+    background-color: var(--secundary-color);
+    color: white;
+
+    padding: 0.2rem;
+}
+
+.products h2 {
+    margin-bottom: 1rem;
+}
+
+.p-list {
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    width: 22rem;
+    height: 30rem;
+    margin: 1rem;
+
+    overflow: hidden;
+
+    box-shadow: var(--light-shadow);
+    border-radius: 2rem;
+
+    background-color: var(--tertiary-color);
+    color: white;
+}
+
+.card h3 {
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1.2rem;
+    max-height: 12rem;
+    padding: 0.2rem;
     
+    overflow: scroll;
+}
+
+.card p::-webkit-scrollbar{
+    display: none;
+}
+
+.card figure {
+    background-color: black;
+
+    width: 100%;
+    height: 15rem;
 }
