@@ -144,14 +144,14 @@ main {
 
 .about-us section {
     justify-content: center;
-
+    flex-direction: column;
     margin: 1.7rem 0 4rem 0;
 }
 
 .about-us figure {
-    width: 70vw;
+    width: 85vw;
     min-width: 22rem;
-    height: 60vw;
+    height: 75vw;
     min-height: 19rem;
 
     border: solid;
@@ -161,7 +161,7 @@ main {
 }
 
 .about-us span {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 /* ******************************** */
@@ -191,8 +191,10 @@ main {
     justify-content: space-between;
     flex-wrap: nowrap;
 
-    width: 22rem;
-    height: 30rem;
+    width: 90vw;
+    max-width: 32rem;
+    height: 120vw;
+    max-height: 42rem;
     margin: 1rem;
 
     overflow: hidden;
@@ -208,10 +210,10 @@ main {
     margin: 1rem 0;
 }
 
-.card p {
-    font-size: 1.2rem;
-    max-height: 12rem;
-    padding: 0.2rem;
+.products .card p {
+    font-size: 1.6rem;
+    max-height: 17rem;
+    padding: 0 2rem;
     
     overflow: scroll;
 }
@@ -224,5 +226,66 @@ main {
     background-color: black;
 
     width: 100%;
-    height: 15rem;
+    height: 20rem;
+}
+
+/***********************/
+
+
+
+
+/*       CONTACT US       */
+
+.contact-us {
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 4rem;
+}
+
+.contact-us h2 {
+    margin-bottom: 1rem;
+}
+
+.social{
+    justify-content: center;
+}
+
+.contact-us .card {
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--button-color);
+
+    width: 90vw;
+    max-width: 38rem;
+    height: 50vw;
+    max-height: 21rem;
+}
+
+/*-----------------------------------------------------*/
+
+
+
+/*        FOOTER        */
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    min-height: 5rem;
+    height: auto;
+
+}
+
+footer figure{
+    display: none;
+}
+
+footer section {
+    justify-content: flex-end;
+    padding: 0 0.2rem;
 }
