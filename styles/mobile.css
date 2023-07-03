@@ -143,9 +143,11 @@ main {
 }
 
 .about-us figure {
+    justify-content: center;
+
     width: 85vw;
-    min-width: 22rem;
-    height: 75vw;
+    min-width: 27rem;
+    height: auto;
     min-height: 19rem;
 
     border: solid;
@@ -154,8 +156,12 @@ main {
     overflow: hidden;
 }
 
+.about-us img {
+    width: 120%;
+}
+
 .about-us span {
-    font-size: 1.3rem;
+    font-size: 4vw;
 }
 
 /* ******************************** */
@@ -217,10 +223,17 @@ main {
 }
 
 .card figure {
+    justify-content: center;
+
     background-color: black;
+    overflow:hidden;
 
     width: 100%;
     height: 20rem;
+}
+
+.card figure > img {
+    width: 120%;
 }
 
 /***********************/
@@ -247,14 +260,31 @@ main {
 
 .contact-us .card {
     flex-direction: column;
-    justify-content: space-between;
-
-    background-color: var(--button-color);
+    justify-content: center;
+    
+    background: none;
 
     width: 90vw;
     max-width: 38rem;
     height: 50vw;
     max-height: 21rem;
+    margin: 0;
+}
+
+.contact-us .card>img {
+    width: 120%;
+}
+
+.contact-us h3 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 5rem black;
+    color: white;
+
+    position: relative;
+    top: -3.8rem;
+
+    margin: 0;
 }
 
 /*-----------------------------------------------------*/
