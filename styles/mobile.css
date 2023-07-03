@@ -81,6 +81,8 @@ header {
 header figure {
     width: 3.5rem;
     height: 3.5rem;
+
+    overflow: hidden;
 }
 
 nav {
@@ -91,20 +93,12 @@ nav {
     padding: 0 .5rem;
 }
 
-nav figure:first-child {
-    background-color: white;
-
-    border-radius: 1rem;
-}
-
 .nav-list {
     display: none;
 }
 
 nav figure:last-child {
-    background-color: var(--lighter-primary-color);
-
-    border-radius: 1.75rem;
+    background: none;
     overflow: hidden;
 }
 
