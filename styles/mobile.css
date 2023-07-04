@@ -163,7 +163,7 @@ main {
 }
 
 .about-us span {
-    font-size: 4vw;
+    font-size: 1.4rem;
 }
 
 /* ******************************** */
@@ -313,4 +313,12 @@ footer {
     justify-content: flex-end;
     align-items: end;
     padding: 0 0.5rem;
+}
+
+.copy p:first-child {
+    font-weight: 700;
+}
+
+.copy p {
+    margin: 1rem 0;
 }
