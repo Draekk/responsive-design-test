@@ -97,6 +97,7 @@ nav {
 
 .nav-list {
     display: none;
+    max-width: 48.2rem;
 }
 
 nav figure:last-child {
@@ -149,8 +150,10 @@ main {
 
     width: 85vw;
     min-width: 27rem;
+    max-width: 67.6rem;
     height: auto;
     min-height: 19rem;
+    max-height: 54rem;
 
     border: solid;
     border-radius: 2rem;
